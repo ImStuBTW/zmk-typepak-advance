@@ -9,4 +9,13 @@ config SPI
 config ZMK_POINTING
     default y
 
+config ZMK_DISPLAY
+	select LV_FONT_MONTSERRAT_28
+
+config LS0XX
+	default y
+    
+config ZMK_DISPLAY_INVERT
+	default y
+
 endif

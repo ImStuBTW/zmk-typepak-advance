@@ -6,7 +6,7 @@
 #include "typeboy-pwing.dtsi"
 
 // Define a pinctrl for the RGB LEDs.
-&pinctrl {
+/*&pinctrl {
     spi3_default: spi3_default {
         group1 {
             psels = <NRF_PSEL(SPIM_MOSI, 1, 0)>;
@@ -19,10 +19,10 @@
             low-power-enable;
         };
     };
-};
+};*/
 
 // RGB LEDs. Connected to Pin D26/P1.00
-&spi3 {
+/*&spi3 {
     compatible = "nordic,nrf-spim";
     status = "okay";
 
@@ -33,19 +33,19 @@
     led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
 
-        /* SPI */
-        reg = <0>; /* ignored, but necessary for SPI bindings */
+        // SPI
+        reg = <0>; // ignored, but necessary for SPI bindings
         spi-max-frequency = <4000000>;
 
-        /* WS2812 */
-        chain-length = <48>; /* number of LEDs */
+        // WS2812
+        chain-length = <48>; // number of LEDs
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
         color-mapping = <LED_COLOR_ID_GREEN
                          LED_COLOR_ID_RED
                          LED_COLOR_ID_BLUE>;
     };
-};
+};*/
 
 // Display settings.
 &cart_spi {
@@ -100,7 +100,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &typeboy_layout;
-        zmk,underglow = &led_strip;
+        //zmk,underglow = &led_strip;
     };
 
     default_transform: keymap_transform_0 {
