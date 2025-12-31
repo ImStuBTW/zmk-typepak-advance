@@ -20,4 +20,5 @@
 ---
 include:
   - board: typepak
-    shield: typeboy-pwing
+    #shield: typeboy-pwing
+    shield: settings_reset
