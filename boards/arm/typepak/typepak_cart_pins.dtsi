@@ -1,0 +1,39 @@
+/ {
+    cart: connector {
+        compatible = "typepark-cart";
+        #gpio-cells = <2>;
+        gpio-map-mask = <0xffffffff 0xffffffc0>;
+        gpio-map-pass-thru = <0 0x3f>;
+        gpio-map
+            = <0 0 &gpio1 11 0> /* D0 */
+            , <1 0 &gpio0 3 0> /* D1 / A0 */
+            , <2 0 &gpio0 30 0> /* D2 / A1 */
+            , <3 0 &gpio0 31 0> /* D3 / A2 */
+            , <4 0 &gpio0 29 0> /* D4 / A3 */
+            , <5 0 &gpio0 26 0> /* D5 */
+            , <6 0 &gpio0 2 0> /* D6 / A4 */
+            , <7 0 &gpio0 6 0> /* D7 */
+            , <8 0 &gpio1 13 0> /* D8 */
+            , <9 0 &gpio0 8 0> /* D9 */
+            , <10 0 &gpio1 2 0> /* D10 */
+            , <11 0 &gpio0 17 0> /* D11 */
+            , <12 0 &gpio0 22 0> /* D12 */
+            , <13 0 &gpio1 6 0> /* D13 */
+            , <14 0 &gpio0 12 0> /* D14 */
+            , <15 0 &gpio0 7 0> /* D15 */
+            , <16 0 &gpio0 15 0> /* D16 */
+            , <17 0 &gpio0 28 0> /* D17 / A5 */
+            , <18 0 &gpio0 20 0> /* D18 */
+            , <19 0 &gpio1 4 0> /* D19 */
+            , <20 0 &gpio1 0 0> /* D20 */
+            , <21 0 &gpio0 13 0> /* D21 */
+            , <22 0 &gpio0 24 0> /* D22 */
+            , <23 0 &gpio0 10 0> /* D23 */
+            ;
+    };
+};
+
+cart_d: &cart {};
+cart_i2c: &i2c0 {};
+cart_spi: &spi1 {};
+cart_serial: &uart0 {};

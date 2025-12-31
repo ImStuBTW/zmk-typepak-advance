@@ -1,0 +1,12 @@
+if SHIELD_TYPEBOY_PWING
+
+config ZMK_KEYBOARD_NAME
+    default "Type Boy P-Wing"
+
+config SPI
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif

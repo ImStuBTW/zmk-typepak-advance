@@ -1,0 +1,19 @@
+if BOARD_TYPEPAK
+
+config BOARD
+    default "typepak"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+config BOARD_TYPEPAK_CHARGER
+    default y
+
+endif # BOARD_TYPEPAK

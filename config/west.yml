@@ -6,9 +6,19 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: kbrd-space
+      url-base: https://github.com/kbrd-space
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
+    - name: zmk-anti-idle
+      remote: kbrd-space
+      revision: main
   self:
     path: config

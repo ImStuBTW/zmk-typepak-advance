@@ -1,0 +1,11 @@
+file_format: "1"
+id: typeboy-pwing
+name: TypeBoy P-Wing
+type: shield
+url: https://github.com/ImStuBTW/type-boy-pwing
+requires: [cart]
+exposes:
+  - spi_glidepoint
+features:
+  - keys
+  - studio
