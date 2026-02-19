@@ -11,11 +11,5 @@ config ZMK_POINTING
 
 config ZMK_BLE
     def_bool n
-
-config ZMK_ANTI_IDLE_ENABLE_ONLY_CONNECTED
-    default y
-    
-config ZMK_ANTI_IDLE_SHARED_ENDPOINT_CONFIGURATION
-    default y
     
 endif
