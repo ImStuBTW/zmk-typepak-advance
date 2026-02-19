@@ -20,5 +20,6 @@
 ---
 include:
   - board: typepak
-    #shield: typeboy-pwing
-    shield: settings_reset
+    shield: typeboy-pwing
+  - board: xiao_ble
+    shield: tester-xaio
