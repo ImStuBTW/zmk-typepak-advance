@@ -18,8 +18,8 @@
     }; \
 };
 
-PIN_MACRO(pin0, <&kp N0>)
-PIN_MACRO(pin1, <&kp N1>)
+PIN_MACRO(pin0, <&aim AIM_ON>)
+PIN_MACRO(pin1, <&aim AIM_ON>)
 PIN_MACRO(pin2, <&kp N2>)
 PIN_MACRO(pin3, <&kp N3>)
 PIN_MACRO(pin4, <&kp N4>)
@@ -43,7 +43,7 @@ PIN_MACRO(pin10, <&kp N1 &kp N0>)
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <&aim AIM_ON
+            bindings = <&pin0
                         &pin1
                         &pin2
                         &pin3

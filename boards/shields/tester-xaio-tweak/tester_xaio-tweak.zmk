@@ -3,4 +3,4 @@ id: tester_xiao-tweak
 name: TesterXiao-tweak
 type: shield
 url: https://zmk.dev/docs/troubleshooting/hardware-issues
-requires: [xiao_ble]
+requires: [seeed_xiao]
