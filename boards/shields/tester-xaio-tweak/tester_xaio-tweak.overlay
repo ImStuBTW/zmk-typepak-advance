@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "tester_xiao-layouts-tweak.dtsi"
+#include "tester_xaio-layouts-tweak.dtsi"
 
 &physical_layout0 {
     transform = <&transform0>;
