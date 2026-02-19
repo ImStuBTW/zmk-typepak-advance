@@ -9,4 +9,7 @@ config ZMK_BLE
 config SETTINGS
     def_bool n
 
+config ZMK_POINTING
+    default y
+    
 endif
