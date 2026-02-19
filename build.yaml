@@ -22,4 +22,4 @@ include:
   - board: typepak
     shield: typeboy-pwing
   - board: xiao_ble
-    shield: tester_xiao
+    shield: tester_xiao-tweak
